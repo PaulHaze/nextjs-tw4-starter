@@ -32,19 +32,20 @@
   --spacing-pmd: 2rem;
   --spacing-plg: 4rem;
   --spacing-pxl: 8rem;
-  /* --spacing-sxs: 29rem;
+  --spacing-sxs: 29rem;
   --spacing-ssm: 40rem;
   --spacing-smd: 48rem;
   --spacing-slg: 64rem;
   --spacing-sxl: 80rem;
-  --spacing-s2xl: 96rem; */
+  --spacing-s2xl: 96rem;
 
+  /* 
   --container-sxs: 29rem;
   --container-ssm: 40rem;
   --container-smd: 48rem;
   --container-slg: 64rem;
   --container-sxl: 80rem;
-  --container-s2xl: 96rem;
+  --container-s2xl: 96rem; */
 
   --breakpoint-xs: 29rem;
 
@@ -74,26 +75,14 @@
     @apply text-4xl;
   }
   h3 {
-    @apply text-2xl;
+    @apply text-3xl;
   }
   h4 {
-    @apply text-xl;
+    @apply text-2xl;
   }
   h5 {
-    @apply text-lg;
+    @apply text-xl;
   }
-}
-
-@layer utilities {
-  /* .bb {
-    @apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-indigo-600 xl:border-pink-600;
-  } */
-  /* .bb2 {
-    @apply border border-green-600 sm:border-red-600 md:border-blue-600 lg:border-pink-600 xl:border-indigo-600;
-  } */
-  /* .flex-center {
-    @apply flex items-center justify-center;
-  } */
 }
 
 @utility bb {
