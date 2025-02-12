@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 /* CUSTOM STYLES */
-@import './custom/test-style.css';
 @import './custom/theme-toggle.css';
 
 @variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
@@ -20,10 +19,12 @@
 }
 
 @theme inline {
-  --font-sans: 'geistSans';
-  --font-geist: var(--font-geist-sans);
-  --font-cursive: var(--font-greatvibes);
+  --font-sans: var(--font-geist-sans);
+
+  /* 
+  ADD THIS FOR CUSTOM FONT USE
   --font-techno: var(--font-nabla);
+*/
 
   --text-6xl: 4rem;
 
