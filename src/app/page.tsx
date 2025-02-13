@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="pt-0 text-center leading-normal font-bold">
         TW4/DaisyUI 5 Next Starter
       </h1>
-      <button className="btn">CLICK</button>
+      <button className="btn btn-primary">CLICK</button>
     </div>
   );
 }
