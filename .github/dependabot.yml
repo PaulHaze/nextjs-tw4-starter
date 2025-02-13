@@ -8,13 +8,22 @@ updates:
   - package-ecosystem: 'npm' # or 'pip', 'go', 'maven', etc.
     directory: '/' # Root directory where dependencies are located
     schedule:
-      interval: 'weekly' # How often to check for updates
+      interval: 'daily' # How often to check for updates
+    auto-merge: true
     target-branch: 'main' # Default branch for updates
-    dev-dependency: true
+    auto-merge-conditions:
+      - base-branch: 'main' # or your target branch
+      - dependency-type: 'all'
+    allow:
+      - dependency-type: 'all'
 
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'weekly'
-    target-branch: 'daisyui'
-    dev-dependency: true
+    auto-merge: true
+    target-branch: 'daisyui' # Default branch for updates
+    auto-merge-conditions:
+      - base-branch: 'daisyui' # or your target branch
+      - dependency-type: 'all'
+    allow:
+      - dependency-type: 'all'
