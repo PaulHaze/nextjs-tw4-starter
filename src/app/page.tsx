@@ -5,6 +5,7 @@ export default function Home() {
         TW4/DaisyUI 5 Next Starter
       </h1>
       <button className="btn btn-primary">CLICK</button>
+      <div className="bg-info h-32 w-32"> Test</div>
     </div>
   );
 }
