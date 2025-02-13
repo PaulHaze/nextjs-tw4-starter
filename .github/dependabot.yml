@@ -8,11 +8,13 @@ updates:
   - package-ecosystem: 'npm' # or 'pip', 'go', 'maven', etc.
     directory: '/' # Root directory where dependencies are located
     schedule:
-      interval: 'daily' # How often to check for updates
+      interval: 'weekly' # How often to check for updates
     target-branch: 'main' # Default branch for updates
+    dev-dependency: true
 
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'daily'
+      interval: 'weekly'
     target-branch: 'daisyui'
+    dev-dependency: true
