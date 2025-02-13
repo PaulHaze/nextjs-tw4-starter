@@ -5,14 +5,14 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # or 'pip', 'go', 'maven', etc.
-    directory: "/"           # Root directory where dependencies are located
+  - package-ecosystem: 'npm' # or 'pip', 'go', 'maven', etc.
+    directory: '/' # Root directory where dependencies are located
     schedule:
-      interval: "weekly"      # How often to check for updates
-    target-branch: "main"    # Default branch for updates
+      interval: 'daily' # How often to check for updates
+    target-branch: 'main' # Default branch for updates
 
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    target-branch: "daisyui" 
+      interval: 'daily'
+    target-branch: 'daisyui'
