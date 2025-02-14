@@ -9,19 +9,20 @@ updates:
     directory: '/' # Root directory where dependencies are located
     schedule:
       interval: 'daily' # How often to check for updates
-    auto-merge: true
     target-branch: 'main' # Default branch for updates
+    allow:
+      - dependency-type: 'all'
+    auto-merge: true
     auto-merge-conditions:
       - base-branch: 'main' # or your target branch
-      - dependency-type: 'all'
-    allow:
       - dependency-type: 'all'
 
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-    auto-merge: true
+      interval: 'daily' # How often to check for updates
     target-branch: 'daisyui' # Default branch for updates
+    auto-merge: true
     auto-merge-conditions:
       - base-branch: 'daisyui' # or your target branch
       - dependency-type: 'all'
